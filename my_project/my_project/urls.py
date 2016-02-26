@@ -10,4 +10,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)), #admin page setting
 
+    url(r'^polls/',include('polls.urls')),
+    url(r'^admin/', admin.site.urls),
+
 )
